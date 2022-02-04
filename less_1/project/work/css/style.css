@@ -231,7 +231,7 @@ a:focus {
 	margin: 0 auto 80px;
 	max-width: 736px;
 	text-align: center;
-
+	position: relative;
 	font-family: "Playfair Display";
 	font-style: normal;
 	font-weight: bold;
@@ -240,6 +240,13 @@ a:focus {
 }
 .best-taste__title::after {
 	content: "";
+	position: absolute;
+	border-top: 1px solid #ffffff;
+	width: 21.7391%;
+	display: block;
+	box-sizing: border-box;
+	bottom: -40px;
+	left: 39.1304%;
 }
 .best-taste__text {
 	margin: 0 auto;
@@ -297,6 +304,16 @@ a:focus {
 	line-height: 1.5;
 	margin: 0 0 60px 0;
 	max-width: 300px;
+	position: relative;
+}
+.collection-wine__title::after {
+	content: "";
+	position: absolute;
+	border-top: 1px solid #282828;
+	display: block;
+	box-sizing: border-box;
+	width: 53.6912%;
+	bottom: -30px;
 }
 .collection-wine__description {
 	margin: 0 0 30px;
@@ -368,4 +385,61 @@ a:focus {
 	object-fit: cover;
 	object-position: center;
 	display: block;
+}
+
+.tasting {
+	background: #282828;
+	padding: 129px 10px 100px;
+	display: flex;
+	justify-content: center;
+}
+.tasting__form {
+	box-sizing: border-box;
+	flex: 0 0 100%;
+	border: 3px solid #c4c4c4;
+	max-width: 1110px;
+	padding: 105px 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.tasting__form::before {
+	content: "";
+	background: #282828 url(../img/06.jpg) center center no-repeat;
+	position: absolute;
+	width: 23.4234%;
+	height: 48.3271%;
+	background-size: contain;
+	top: -69px;
+	left: -30px;
+}
+
+.tasting__form::after {
+	content: "";
+	background: #282828 url(../img/07.jpg) center center no-repeat;
+	position: absolute;
+	width: 23.4234%;
+	height: 37.1747%;
+	background-size: contain;
+	top: -65px;
+	right: -53px;
+}
+.tasting__title {
+	position: absolute;
+	width: 100%;
+	max-width: 490px;
+	text-align: center;
+	background: #282828;
+	top: -27px;
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.5714rem;
+	margin: 0;
+}
+
+.tasting__body {
+	max-width: 48.5585%;
+	width: 100%;
 }
